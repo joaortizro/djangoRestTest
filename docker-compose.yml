@@ -2,6 +2,7 @@ version: '3'
 services:
   api:
     build: .
+    container_name: kib-backend
     command: gunicorn api.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/app

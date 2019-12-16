@@ -15,3 +15,4 @@ RUN pip install -r requirements.txt
 # bug in gunicorn 20.0.0
 #RUN apk add binutils libc-dev
 
+#CMD gunicorn --bind 0.0.0.0:$PORT api.wsgi 
